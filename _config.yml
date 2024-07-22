@@ -1,8 +1,8 @@
 name: "SgAriFool's blog"
 description: "爱斯基双钩的个人技术博客"
 
-avatar: https://sgarifool.github.io/images/avatar.png
-favicon: https://sgarifool.github.io/images/favicon.ico
+avatar: https://sgarifool.github.io/assets/aliPS.png
+favicon: https://sgarifool.github.io/assets/favicon.ico
 
 navigation:
   - name: 首页
