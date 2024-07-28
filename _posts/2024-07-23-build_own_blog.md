@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 从零搭建一个属于自己的 github.io 博客
-date: 2024-07-23
+title: 从零搭建一个属于自己的 github.io 博客 (test)
+date: 2024-07-28
 tags:
   - web
 comments: true
@@ -9,7 +9,7 @@ author: sgarifool
 toc: true
 ---
 
-###### 说明：本教程只针对不了解网站搭建并且想要快速搭建起个人博客的新手，帮助建立网站的平台有很多，有一定网站开发基础的读者可另寻门路
+###### 本文只是记录了参考其它大佬的教程, 搭建出自己博客的流程
 
 <!-- more -->
 
@@ -17,9 +17,13 @@ toc: true
 
 利用 GitHub Pages 免费获取你自己的网站域名只需要一个先决条件：拥有你自己的 github 账号。如果你目前还没有，可以去 [GitHub 官网](https://github.com)先注册一个。
 
-## Step 1. 建立博客仓库
+## 1. Github 部分[^1][^2]
 
-借助 GitHub 平台搭建博客网站，首先要建立一个与你的 github 账号相关联的博客仓库。推荐没有网站建设经验的新手通过 fork 我的博客仓库迅速建立起你的第一个网站。下面我们就来详细介绍这种方法。
+#### 1.1 新建一个 GitHub 仓库
+
+博客是基于 GitHub 的 Page 功能来实现的, 所以一个 GitHub 账号是必不可少的, 可以自行去 [GitHub 官网](https://github.com)注册一个
+
+注册好建立一个与你的 github 账号相关联的博客仓库。推荐没有网站建设经验的新手通过 fork 我的博客仓库迅速建立起你的第一个网站。下面我们就来详细介绍这种方法。
 
 点击链接 <https://github.com/pianfan/pianfan.github.io> 进入我的博客仓库地址，点击这里的 Fork。
 
@@ -31,7 +35,7 @@ toc: true
 
 点击 Create fork，完成创建。这样你就有了你的第一个博客仓库，以后的操作都在你自己的仓库进行。
 
-## Step 2. 修改仓库文件
+### Step 2. 修改仓库文件
 
 如果这时你在浏览器网址一栏搜索你刚刚建立的仓库名，出现的会是我的博客页面。因为你刚才是直接复刻的我的博客仓库，里面的文件都是我原来仓库里的文件。你需要修改几个文件里的几个最基本的地方，来使页面与你的个人信息相关联。
 
@@ -97,7 +101,7 @@ toc: true
 
 好了，以上就是所有必须要你修改的文件。你现在再点进去你的博客页面看看，不出意外的话应该是成功修改了的。
 
-## Step 3. 开始写你的第一篇文章
+### Step 3. 开始写你的第一篇文章
 
 在 README.md部分我有提到过怎么在 github 上编写 Markdown 文件，写文章也是一样的道理。
 
@@ -124,3 +128,16 @@ toc: true
 ---
 
 感谢阅读！
+
+## 2. Jekyll 部分
+
+上面只是完成了最简单的博客的搭建, 虽然博客的内容可以使用常规的 MarkDown 语法, 但是如果我写的博客里涉及到数学公式, 或者希望显示一些流程图, 上述模板是不够用的, 所以需要修改部分Jekyll的代码, 来添加对 Latex 和 Mermaid 的支持
+
+---
+
+## 参考文献
+
+[^1]: [https://pianfan.github.io/build_own_website](https://pianfan.github.io/build_own_website)
+
+[^2]: [https://arnold117.github.io/github_pages/](https://arnold117.github.io/github_pages/)
+
