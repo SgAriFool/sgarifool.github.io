@@ -13,7 +13,7 @@ toc: true
 
 <!-- more -->
 
-## 1 Github 部分 [^1] [^2]
+## 1 Github 部分[^1][^2]
 
 #### 1.1 新建一个 GitHub 仓库
 
@@ -44,13 +44,11 @@ toc: true
 `README.md` 文件是对仓库的说明, 一般来说第一行标题都是仓库名称, 后面是仓库的介绍 (理论上来说, 这个可以不填) 要填可以参考如下
 
 ```markdown
-
 # sgarifool.github.io
 
 My Personal Blog via GitHub
 
 创建流程参考: https://pianfan.github.io/build_own_website/
-
 ```
 
 #### 1.2.2 修改 `_config.yml` 文件
@@ -59,68 +57,72 @@ My Personal Blog via GitHub
 
 **网站名称和网站描述**
 
-![名称和描述](https://pianfan.github.io/images/name&desc.png)
+```yml
+name: "xxxx's blog"
+description: "xxxx的个人技术博客"
+```
 
-这个根据你自己的喜好来设置，不一定要仿造我的模式。比如你可以给你的博客网站取一个好听点的名字，网站描述也可以是简短的自我介绍或个性签名等任何你想表达的内容。
+这个根据自己的喜好来设置 (我偷懒就仿照了上一个博主的风格了) 
 
 **个人头像和网站 logo**
 
-![头像和logo](https://pianfan.github.io/images/avatar&ico.png)
+```yml
+avatar: https://username.github.io/assets/your_avatar.png
+favicon: https://username.github.io/assets/your_ico.ico
+```
 
-avatar 代表头像，后面的链接是你想显示在页面的头像图片的 url。favicon 指网站图标，即显示在浏览器标签页和收藏夹里的 logo，通常以 32 * 32 像素大小的 .ico 图片为宜，也可以不设置。
+avatar 是头像, 后面的链接是你想显示在页面的头像图片的链接, favicon 是网站图标, 是显示在浏览器标签页和收藏夹里的图标, 一般是一张 `32 * 32` 像素大小的 `.ico` 图片, 也可以不设置
 
 **个人社交链接** 
 
-![社交链接](https://pianfan.github.io/images/links.png)
+```yml
+footer-links:
+  zhihu: 
+  email:
+  github: 
+```
 
-填用户名就可以，没有的就不填。
+在 `fotter-links` 这个结构下面按照自己个人需求配置就可以
 
 **脚注和网址**
 
-![版权标注和网址](https://pianfan.github.io/images/footer&url.png)
+```yml
+footer-text: Copyright (c) 2024 SgAriFool
+url: https://sgarifool.github.io
+```
 
-
+按照自己爱好来
 #### 1.2.3 删除 `_posts` 文件夹并重建
 
 `_posts` 文件夹里放的是博客文章, 直接 fork 过来后里面的文章要么是其他人的文章, 要么是主题的说明, 整个删除后加入自己的文章就可以了
 
-#### 1.2.4 修改 about.md文件
+#### 1.2.4 修改 `about.md` 文件
 
-`about.md` 里的内容是展示在“关于”页面上的。
+`about.md` 里的内容是展示在“关于”页面上的, 相当于是一个特殊的"blog"
 
-好了，以上就是所有必须要你修改的文件。你现在再点进去你的博客页面看看，不出意外的话应该是成功修改了的。
+### 1.3 开始写自己的文章
 
-### Step 3. 开始写你的第一篇文章
+修改完上述文件, 相当于个人博客的大部分框架已经完成, 可以开开心心的写自己的博客啦
 
-在 `README.md` 部分我有提到过怎么在 github 上编写 Markdown 文件，写文章也是一样的道理。
+博客的主体是使用 Markdown 语法来写的, 放在 `_posts` 文件夹里, 注意一下文件的命名格式为 `YYYY-MM-DD-blog_title.md` 命名参考如下: 
 
-文章文件的命名也是有讲究的，请按照下面的例子呈现的格式命名：
-
+```bash
 2024-1-25-letter_to_you.md
 2024-1-26-user_manual.md
+```
 
 还有一点需要注意，每篇文章开头记得附上说明，格式如下：
 
----
-
+```markdown
 layout: post
 title: "文章标题"
 date:   2024-1-27
 tags: [tag1, tag2]
 comments: true
 author: xxx
+```
 
----
-
-- date 是写作日期，注意格式必须遵守 `YYYY-MM-DD` 才可以。
-
-- tags 是文章标签，可以有一个或多个。
-
----
-
-感谢阅读！
-
-## 2. Jekyll 部分 [^3] [^4] [^5]
+## 2. Jekyll 部分[^3][^4][^5]
 
 上面只是完成了最简单的博客的搭建, 虽然博客的内容可以使用常规的 MarkDown 语法, 但是如果我写的博客里涉及到数学公式, 或者希望显示一些流程图, 上述模板是不够用的, 所以需要修改部分Jekyll的代码, 来添加对 Latex 和 Mermaid 的支持
 
