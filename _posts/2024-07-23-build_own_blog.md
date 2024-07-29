@@ -138,6 +138,6 @@ author: xxx
 
 [^3]: [https://blog.csdn.net/m0_64012205/article/details/121265345](https://blog.csdn.net/m0_64012205/article/details/121265345)
 
-[^4]: [https://www.jianshu.com/p/aa359b3aef0](https://www.jianshu.com/p/aa359b3aef0)
+[^4]: [https://www.jianshu.com/p/aa359b3aef0c](https://www.jianshu.com/p/aa359b3aef0c)
 
 [^5]: [https://jackgruber.github.io/2021-05-09-Embed-Mermaid-in-Jekyll-without-plugin/](https://jackgruber.github.io/2021-05-09-Embed-Mermaid-in-Jekyll-without-plugin/)
