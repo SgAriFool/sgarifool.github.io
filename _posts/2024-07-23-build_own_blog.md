@@ -9,7 +9,7 @@ author: sgarifool
 toc: true
 ---
 
-本文只是记录了参考其它大佬的教程, 搭建出自己博客的流程
+> 本文只是记录了参考其它大佬的教程, 搭建出自己博客的流程
 
 <!-- more -->
 
@@ -121,6 +121,8 @@ tags: [tag1, tag2]
 comments: true
 author: xxx
 ```
+
+---
 
 ## 2. Jekyll 部分[^3][^4][^5]
 

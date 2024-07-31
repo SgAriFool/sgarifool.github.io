@@ -6,10 +6,10 @@ tags:
   - linux
 comments: true
 author: sgarifool
-toc: true
+toc: false
 ---
 
-本文记录了如何在写Linux代码时 debug 第三方库
+> 本文记录了如何在写 Linux 代码时 debug 第三方库
 
 <!-- more -->
 
@@ -149,4 +149,4 @@ rtmpdump/
 
 于是我将 `librtmp.a` 这个文件链接到了我自己编写的代码中, 虽然如果仅仅只链接这个文件好像还是会报错, 因为这个这个库在实现的时候还使用了其它的库如 openssl 和 zlib 库,所以还需要把这些库也链接上, 秉着有报错问 chat 的原则, 终于将这个带有调试信息的 rtmp 库链接到了我自己写的程序中
 
-使用vscode调试也成功进入了函数的内部, 看到了究竟是那一句话发生了非法读写
+使用vscode调试也成功进入了函数的内部, 看到了究竟是哪一句话发生了非法读写
