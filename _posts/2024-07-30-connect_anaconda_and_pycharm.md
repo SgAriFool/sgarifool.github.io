@@ -15,7 +15,7 @@ toc: false
 
 #### 写在前面的话
 
-本文参考了一篇 [CSDN 的博文](https://blog.csdn.net/m0_51210142/article/details/119118246), 起因是今年2月份, 在使用新电脑配置 anaconda 的 python 环境和 pycharm 并联的时候一些重要部分忘记了, 希望回看那篇博文发现被 CSDN 列入了 vip 文章, 之前收藏这篇文章的时候, 文章还是全文免费, 可以随便查阅的, 翻了一下博主的主页, 发现他2022年之后就再也没有发布过任何文章, 经搜索发现 CSDN 也有无缘无故将一些文章在作者不知情的情况下列入 vip 文章的先例 (对CSDN的反感又加深嘞), 在通过 CSDN 私信原作者无果后 (估计原作者已经不玩CSDN了) 决定自己搜罗资料重新整理一份 (如今游客身份已经只能看到这篇文章的开头了捏), 将原文作者的前言贴在下方吧 (真实讽刺啊)
+本文参考了一篇 [CSDN 的博文](https://blog.csdn.net/m0_51210142/article/details/119118246), 起因是今年2月份, 在使用新电脑配置 anaconda 的 python 环境和 pycharm 并联的时候一些重要部分忘记了, 希望回看那篇博文发现被 CSDN 列入了 vip 文章, 之前收藏这篇文章的时候, 文章还是全文免费, 可以随便查阅的, 翻了一下博主的主页, 发现他2022年之后就再也没有发布过任何文章, 经搜索发现 CSDN 也有无缘无故将一些文章在作者不知情的情况下列入 vip 文章的先例 (对 CSDN 的反感又加深嘞), 在通过 CSDN 私信原作者无果后 (估计原作者已经不玩 CSDN 了) 决定自己搜罗资料重新整理一份 (如今游客身份已经只能看到这篇文章的开头了捏), 将原文作者的前言贴在下方吧 (真实讽刺啊)
 
 > 手动装了两次 anaconda 和 pycharm 并联，多少有点心得，这里记录一下，方便后面再装时可以查阅。
 
@@ -60,7 +60,7 @@ pycharm 的安装网上也有非常多的教程, 想用破解版可以自己去�
    # 注意：新建的环境一般在"Anaconda3\envs\env_name"这个文件夹下, 里面有一个 python.exe 文件
 ```
 2. 新建一个存放新项目的文件夹, 位置自己选就可以了
-3. 在 Pycharm 里新建一个 project, 文件夹选择刚刚新建的文件夹, 并且在下方选择自己在第1步新建的 python 环境 (选中"Anaconda3\envs\env_name"文件夹下的 python.exe 文件)   ![](../assets/img-2024-07-30-connect_anaconda_and_pycharm-1.png)
+3. 在 Pycharm 里新建一个 project, 文件夹选择刚刚新建的文件夹, 并且在下方选择自己在第1步新建的 python 环境 (选中"Anaconda3\envs\env_name"文件夹下的 python.exe 文件)   ![](../assets/img-2024-07-30-connect_anaconda_and_pycharm-2.png)
 4. 点击 create 就可以将这两个东西并联起来
 
 之后给自己的 python 环境安装第三方库有两种方法: conada 和 pip
@@ -89,4 +89,4 @@ pip install
 
 #### 参考文献
 
-[^1]: https://www.jianshu.com/p/663eea2c6f8f
+[^1]: [https://www.jianshu.com/p/663eea2c6f8f](https://www.jianshu.com/p/663eea2c6f8f)
