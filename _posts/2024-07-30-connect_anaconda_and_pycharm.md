@@ -60,7 +60,7 @@ pycharm 的安装网上也有非常多的教程, 想用破解版可以自己去�
    # 注意：新建的环境一般在"Anaconda3\envs\env_name"这个文件夹下, 里面有一个 python.exe 文件
 ```
 2. 新建一个存放新项目的文件夹, 位置自己选就可以了
-3. 在 Pycharm 里新建一个 project, 文件夹选择刚刚新建的文件夹, 并且在下方选择自己在第1步新建的 python 环境 (选中"Anaconda3\envs\env_name"文件夹下的 python.exe 文件)   ![](../assets/img-2024-07-30-connect_anaconda_and_pycharm-2.png)
+3. 在 Pycharm 里新建一个 project, 文件夹选择刚刚新建的文件夹, 并且在下方选择自己在第1步新建的 python 环境 (选中"Anaconda3\envs\env_name"文件夹下的 python.exe 文件)   ![](../assets/img-2024-07-30-connect_anaconda_and_pycharm-1.png)
 4. 点击 create 就可以将这两个东西并联起来
 
 之后给自己的 python 环境安装第三方库有两种方法: conada 和 pip

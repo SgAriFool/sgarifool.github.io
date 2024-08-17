@@ -63,8 +63,7 @@ exclude:
   - README.md
 
 # about gitalk, if not need just delete it
-comments:
-  gitalk: true
+gitalk:
   clientID: Iv23liYlgQmw1OY2kPss
   clientSecret: 4ab91cd4c85fca2c443805bd4d5d4e2fb9d6aed0
   repo: sgarifool.github.io
