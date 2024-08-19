@@ -65,6 +65,6 @@ exclude:
 # about gitalk, if not need just delete it
 gitalk:
   clientID: Iv23liYlgQmw1OY2kPss
-  clientSecret: 4ab91cd4c85fca2c443805bd4d5d4e2fb9d6aed0
+  clientSecret: e07cd4305aaf72d3e37c464eee24b1779d0af5ab
   repo: sgarifool.github.io
   owner: sgarifool
