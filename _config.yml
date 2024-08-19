@@ -62,11 +62,3 @@ exclude:
   - LICENSE
   - README.md
 
-# # about gitalk, if not need just delete it
-# gitalk:
-#   clientID: Ov23liMEY6aCFeM7rKZJ
-#   clientSecret: e81b6beef0794fc8d3c36073ec206739ec4c26c8
-#   repo: sgarifool.github.io
-#   owner: sgarifool
-
-
