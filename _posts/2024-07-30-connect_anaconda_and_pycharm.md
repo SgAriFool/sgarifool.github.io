@@ -21,7 +21,7 @@ toc: false
 
 ---
 
-#### 1 Anaconda的安装 (版本自己选择, 目前自己用的是 Anaconda3-2018.12-Windows-x86_64)
+#### 1 Anaconda 的安装 (版本自己选择, 目前自己用的是 Anaconda3-2018.12-Windows-x86_64)
 
 网上已经有非常详细的教程，具体可以参考 [这个链接](https://zhuanlan.zhihu.com/p/358641541)
 
@@ -39,7 +39,7 @@ toc: false
 pycharm 的安装网上也有非常多的教程, 想用破解版可以自己去搜索微信公众号, 一般都有全套的安装教程, 这里描述的是一个社区版本的安装
 
 1. 去 [官网](https://www.jetbrains.com/pycharm/download/other.html) 找到自己想要的社区版本并且下载对应的 exe 版本
-2. 双击下载的exe文件, 点击 Next (下一步)
+2. 双击下载的 exe 文件, 点击 Next (下一步)
 3. 修改安装路径 (这里我的做法是直接将最前面的盘符由 C 改为 D, 可以选择自己喜欢的地方安装), 点击 Next (下一步)
 4. 可以只勾第一个, 其它按需勾选, 完成后, 点击 Next (下一步)
    ![](../assets/img-2024-07-30-connect_anaconda_and_pycharm.png)

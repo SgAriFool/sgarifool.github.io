@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux第三方库遇到bug怎么办
+title: Linux 第三方库遇到 bug 怎么办
 date: 2024-07-29
 tags:
   - linux
@@ -13,7 +13,7 @@ toc: false
 
 <!-- more -->
 
-最近在Linux上写代码，发现刚刚写好的程序在运行的时候发生了 `segmentation fault` (段错误), 在使用 vscode 的 Debug 功能进行调试代码的时候，发现程序停在了一句使用 librtmp 库的 API 的代码上
+最近在 Linux 上写代码, 发现刚刚写好的程序在运行的时候发生了 `segmentation fault` (段错误), 在使用 vscode 的 Debug 功能进行调试代码的时候, 发现程序停在了一句使用 librtmp 库的 API 的代码上
 
 ```cpp
 int nRet = RTMP_SendPacket(m_pRtmp,packet,TRUE);
