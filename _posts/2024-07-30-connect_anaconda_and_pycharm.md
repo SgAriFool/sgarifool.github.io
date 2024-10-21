@@ -13,7 +13,7 @@ toc: false
 
 <!-- more -->
 
-#### 写在前面的话
+### 写在前面的话
 
 本文参考了一篇 [CSDN 的博文](https://blog.csdn.net/m0_51210142/article/details/119118246), 起因是今年2月份, 在使用新电脑配置 anaconda 的 python 环境和 pycharm 并联的时候一些重要部分忘记了, 希望回看那篇博文发现被 CSDN 列入了 vip 文章, 之前收藏这篇文章的时候, 文章还是全文免费, 可以随便查阅的, 翻了一下博主的主页, 发现他2022年之后就再也没有发布过任何文章, 经搜索发现 CSDN 也有无缘无故将一些文章在作者不知情的情况下列入 vip 文章的先例 (对 CSDN 的反感又加深嘞), 在通过 CSDN 私信原作者无果后 (估计原作者已经不玩 CSDN 了) 决定自己搜罗资料重新整理一份 (如今游客身份已经只能看到这篇文章的开头了捏), 将原文作者的前言贴在下方吧 (真实讽刺啊)
 
@@ -21,7 +21,7 @@ toc: false
 
 ---
 
-#### 1 Anaconda 的安装 (版本自己选择, 目前自己用的是 Anaconda3-2018.12-Windows-x86_64)
+### 1 Anaconda 的安装 (版本自己选择, 目前自己用的是 Anaconda3-2018.12-Windows-x86_64)
 
 网上已经有非常详细的教程，具体可以参考 [这个链接](https://zhuanlan.zhihu.com/p/358641541)
 
@@ -34,7 +34,7 @@ toc: false
 
 ---
 
-#### 2 Pycharm 的安装 (版本自己选择, 目前本人用的是 pycharm-community-2019.3.5)
+### 2 Pycharm 的安装 (版本自己选择, 目前本人用的是 pycharm-community-2019.3.5)
 
 pycharm 的安装网上也有非常多的教程, 想用破解版可以自己去搜索微信公众号, 一般都有全套的安装教程, 这里描述的是一个社区版本的安装
 
@@ -47,7 +47,7 @@ pycharm 的安装网上也有非常多的教程, 想用破解版可以自己去�
 
 ---
 
-#### 3 Anaconda 与 Pycharm 的并联
+### 3 Anaconda 与 Pycharm 的并联
 
 1. 在 Anaconda 里, 新建一个自己的 python 环境 (方便以后删库跑路)[^1]
 ```bash
@@ -87,6 +87,6 @@ pip install
 - conda install 可以检查所有包的依赖关系, 保证环境的可用性, 而 pip install 可能导致环境被破坏或冲突
 - conda install 安装的包都放在 anaconda3/pkgs 目录下, 可以复用, 而 pip install 安装的包放在不同的环境中, 可能重复下载
 
-#### 参考文献
+### 参考文献
 
 [^1]: [https://www.jianshu.com/p/663eea2c6f8f](https://www.jianshu.com/p/663eea2c6f8f)
