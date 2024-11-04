@@ -13,7 +13,7 @@ toc: true
 
 <!-- more -->
 
-## 1 Github 部分[^1][^2]
+## 1. Github 部分[^1][^2]
 
 #### 1.1 新建一个 GitHub 仓库
 

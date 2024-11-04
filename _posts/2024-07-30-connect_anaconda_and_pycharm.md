@@ -21,7 +21,7 @@ toc: false
 
 ---
 
-### 1 Anaconda 的安装 (版本自己选择, 目前自己用的是 Anaconda3-2018.12-Windows-x86_64)
+### 1. Anaconda 的安装 (版本自己选择, 目前自己用的是 Anaconda3-2018.12-Windows-x86_64)
 
 网上已经有非常详细的教程，具体可以参考 [这个链接](https://zhuanlan.zhihu.com/p/358641541)
 
@@ -34,7 +34,7 @@ toc: false
 
 ---
 
-### 2 Pycharm 的安装 (版本自己选择, 目前本人用的是 pycharm-community-2019.3.5)
+### 2. Pycharm 的安装 (版本自己选择, 目前本人用的是 pycharm-community-2019.3.5)
 
 pycharm 的安装网上也有非常多的教程, 想用破解版可以自己去搜索微信公众号, 一般都有全套的安装教程, 这里描述的是一个社区版本的安装
 
@@ -47,7 +47,7 @@ pycharm 的安装网上也有非常多的教程, 想用破解版可以自己去�
 
 ---
 
-### 3 Anaconda 与 Pycharm 的并联
+### 3. Anaconda 与 Pycharm 的并联
 
 1. 在 Anaconda 里, 新建一个自己的 python 环境 (方便以后删库跑路)[^1]
 ```bash
