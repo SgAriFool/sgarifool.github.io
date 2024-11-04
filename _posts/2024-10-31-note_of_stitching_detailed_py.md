@@ -61,14 +61,14 @@ boat5.jpg boat2.jpg boat3.jpg boat4.jpg boat1.jpg boat6.jpg \
 这里部分参数的含义如下[^2]
 
 > - work_megapix ：在特征提取等 registration 过程中，为了减小耗时，会将图像进行缩放，这就需要一个缩放比例；
-> - features : 表示选用的提取的特征，（SURF | ORB | SIFT | akaze）
-> - matcher : 特征匹配方法，（homography | affine）, 单应性变换与仿射变换方法，分别对应 BestOf2NearestMatcher, AffineBestOf2NearestMatcher，后者会找到两幅图仿射变换的最佳匹配点；
+> - features : 表示选用的提取的特征，（`SURF | ORB | SIFT | akaze`）
+> - matcher : 特征匹配方法，（`homography | affine`）, 单应性变换与仿射变换方法，分别对应 BestOf2NearestMatcher, AffineBestOf2NearestMatcher，后者会找到两幅图仿射变换的最佳匹配点；
 > - estimator : （homography | affine）, 相机参数评估方法；
 > - match_conf : 浮点型数据，表示匹配阶段内点判断的阈值；
 > - conf_thresh : 两幅图片是来自同一全景的阈值：
-> - ba : BA 优化相机参数的代价函数，（no | reproj | ray | affine）;
+> - ba : BA 优化相机参数的代价函数，（`no | reproj | ray | affine`）;
 > - ba_refine_mask : BA 优化的时候，可以固定某些参数不动，通过指定 mask 实现。`x`表示需要优化，`_`表示固定参数，对应的顺序是 fx, skew, ppx, aspect, ppy；
-> - wave_correct : 波形矫正标志，有（no | horiz | vert）三种类型，可以将拼接图像约束在水平方向，或者垂直方向，避免出现 “大鹏展翅” 的情况；​
+> - wave_correct : 波形矫正标志，有（`no | horiz | vert`）三种类型，可以将拼接图像约束在水平方向，或者垂直方向，避免出现 “大鹏展翅” 的情况；​
 > - save_graph : 以 DOT 语言格式保存图像之间的匹配关系；
 
 > - warp ： 图像变换方法，包括球面投影、柱面投影等，opencv 支持的投影方法比较多；
@@ -76,7 +76,7 @@ boat5.jpg boat2.jpg boat3.jpg boat4.jpg boat1.jpg boat6.jpg \
 > - seam : 接缝寻找的方法；
 > - compose_megapix : 预览时用于设置拼接过程中以及拼接图的分辨率；
 > - expos_comp : 光照补偿方法；
-> - blend : 图像融合方法，常用的有（feather | multibend）；
+> - blend : 图像融合方法，常用的有（`feather | multibend`）；
 
 其实一开始看这么多参数也是懵的, 但是我们可以根据输入的参数, 先替换程序里参数对应的部分, 这里我贴出我的部分修改: 
 
