@@ -63,7 +63,7 @@ boat5.jpg boat2.jpg boat3.jpg boat4.jpg boat1.jpg boat6.jpg \
 > - work_megapix ：在特征提取等 registration 过程中，为了减小耗时，会将图像进行缩放，这就需要一个缩放比例；
 > - features : 表示选用的提取的特征，（`SURF | ORB | SIFT | akaze`）
 > - matcher : 特征匹配方法，（`homography | affine`）, 单应性变换与仿射变换方法，分别对应 BestOf2NearestMatcher, AffineBestOf2NearestMatcher，后者会找到两幅图仿射变换的最佳匹配点；
-> - estimator : （homography | affine）, 相机参数评估方法；
+> - estimator : （`homography | affine`）, 相机参数评估方法；
 > - match_conf : 浮点型数据，表示匹配阶段内点判断的阈值；
 > - conf_thresh : 两幅图片是来自同一全景的阈值：
 > - ba : BA 优化相机参数的代价函数，（`no | reproj | ray | affine`）;
@@ -186,9 +186,9 @@ class MyCamera:
         self.ppy = ppy
 
     def K(self):
-        K = np.array([[self.focal, 0, self.ppx],
-                         [0, self.focal, self.ppy],
-                         [0, 0, 1]])
+        K = np.array([[self.focal, 0         , self.ppx],
+                      [0         , self.focal, self.ppy],
+                      [0         , 0         , 1]])
         return K
 
 ```
