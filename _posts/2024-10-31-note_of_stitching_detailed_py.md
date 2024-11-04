@@ -5,10 +5,10 @@ date: 2024-10-31
 tags:
   - opencv
   - python
-  - "#stitch"
+  - stitch
 comments: true
 author: sgarifool
-toc: false
+toc: true
 ---
 
 > 这是一篇关于 `stitching_detailed.py` 的学习笔记, 暂时主要记录一下如何从最后的拼接是如何进行的, 以及我需要保存一些什么样的数据, 来为我其它相同机位的图片的实时拼接提供帮助
