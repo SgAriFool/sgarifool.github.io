@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 文章标题
+title: Linux 笔记汇总
 date: 2024-12-17
 tags:
   - linux
