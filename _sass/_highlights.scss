@@ -5,18 +5,21 @@ pre, code {
 code.highlighter-rouge {
   font-size: 90%;
   color: $oc-indigo-9;
-  background-color: $oc-gray-1;
-  padding: .1em .2em;
-  border-radius: 3px;
+  background-color: #f0f4f8;  // 调整为更柔和的背景色
+  padding: .2em .4em;  // 增加内边距提升视觉空间
+  border-radius: 4px;  // 增大圆角更圆润
 }
 
 pre.highlight {
   font-size: $small-font-size;
-  padding: .45em .45em .45em .625em;
-  border: 1px solid $oc-gray-3;
-  border-radius: 3px;
-  margin: 1em 0;
-  overflow: scroll;
+  padding: 1em;  // 增加上下左右内边距
+  border: 1px solid #e5e7eb;  // 调整为更浅的边框颜色
+  border-radius: 8px;  // 增大代码块整体圆角
+  margin: 1.5em 0;  // 调整与上下文的间距
+  overflow: auto;  // 滚动条仅在内容溢出时显示
+  background-color: #f8f9fa;  // 调整为更柔和的背景色
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);  // 添加轻微阴影提升层次感
+  line-height: 1.6;  // 优化行高提升可读性
 }
 
 .highlight  { background: $oc-gray-0; }
