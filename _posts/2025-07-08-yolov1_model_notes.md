@@ -9,7 +9,7 @@ author: sgarifool
 toc: false
 ---
 
-> 笔记介绍了YOLOv1的
+> 笔记介绍了 YOLOv1 的部分实现细节, 以及 YOLOv1 的损失是如何计算的
 
 <!-- more -->
 
@@ -227,29 +227,35 @@ YOLOv1 的损失一共分为 5 个式子做加和得到:
 ---
 
 在YOLOv1中，每个边界框的 **置信度** 定义为：
+
 $$
 \text{Confidence} = Pr(Object) \times IOU_{pred}^{truth}
 $$
+
 - $Pr(Object)$：表示边界框内存在目标的概率。
 - $IOU_{pred}^{truth}$：预测框与真实框的交并比（Intersection over Union）
 
 **有目标的置信度损失**
+
 $$
 \sum_{i=0}^{S^2} \sum_{j=0}^{B} \mathbb{1}_{ij}^{obj} (C_i - \hat{C}_i)^2
 $$
+
 - **作用**：对于负责检测目标的边界框，惩罚其置信度与真实IOU的偏差。
 - **目标值**：$C_i = IOU_{pred}^{truth}$（理想情况下，预测框与真实框完全重合，IOU=1）。
 
 **无目标的置信度损失**
+
 $$
 \lambda_{noobj} \sum_{i=0}^{S^2} \sum_{j=0}^{B} \mathbb{1}_{ij}^{noobj} (C_i - \hat{C}_i)^2
 $$
+
 - **作用**：对于不包含目标的边界框，惩罚其高置信度预测（即抑制虚假检测）。
 - **目标值**：$C_i = 0$（因为没有目标，理想置信度为0）。
 - **权重**：$\lambda_{noobj}=0.5$，降低无目标框的损失权重（大多数网格不包含目标）。
 
 **YOLOv1**：使用均方误差（MSE）计算置信度损失，区分有目标和无目标。
-**YOLOv2及以后**：引入**逻辑回归**处理置信度预测，并使用**Objectness Score**显式表示目标存在概率，进一步优化了正负样本不平衡问题。
+**YOLOv2及以后**：引入 **逻辑回归** 处理置信度预测，并使用 **Objectness Score** 显式表示目标存在概率，进一步优化了正负样本不平衡问题。
 
 ---
 
@@ -259,4 +265,5 @@ $$
 ## 参考文献
 
 [1] REDMON J, DIVVALA S, GIRSHICK R, et al. You Only Look Once: Unified, Real-Time Object Detection[A/OL]. arXiv, 2016[2024-04-19]. http://arxiv.org/abs/1506.02640.
+
 [2] TERVEN J, CORDOVA-ESPARZA D. A Comprehensive Review of YOLO Architectures in Computer Vision: From YOLOv1 to YOLOv8 and YOLO-NAS[J/OL]. Machine Learning and Knowledge Extraction, 2023, 5(4): 1680-1716. DOI:10.3390/make5040083.
