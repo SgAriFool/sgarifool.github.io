@@ -149,7 +149,7 @@ P:.
 
 可以发现, EFI 分区的顶层变成了两个文件夹, EFI 和 grub 这两个文件夹, EFI 文件夹里还多出了一个 grub 文件夹(这个文件夹的命名是在配置引得的时候指定的, 在上述的命令里我有用到 `--bootloader-id=grub` 这个参数), 在顶层目录使用 `ls` 命令还可以发现, 顶层目录还多了 4 个文件: 
 
-![[img-2025-03-18-how_to_mount_efi_partitions-1.png]]
+![](../assets/img-2025-03-18-how_to_mount_efi_partitions-1.png)
 
 这些多出来的文件多数都是 Arch 的内核文件, 因为 `/mnt/boot` 这个节点下本来存放的是 Arch 的内核文件, 此时将这个节点挂载在 Win 的 EFI 分区, 就会将 Arch 的内核文件全部存放到 EFI 分区里, 但其实这么多文件夹里, 唯一起到引导系统作用的是 `EFI/grub/bootx64.efi` 这个文件, 这个文件其实很小, 所以我们可以通过合理的挂载方式, 防止 Arch 的内核文件放到 EFI 分区
 
