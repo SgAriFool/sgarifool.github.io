@@ -9,7 +9,7 @@ author: sgarifool
 toc: false
 ---
 
-> 笔记介绍了 YOLOv1 的部分实现细节, 以及 YOLOv1 的损失是如何计算的
+> 笔记介绍了 YOLOv1 的 backbone 部分实现细节, 以及 YOLOv1 的损失是如何计算的
 
 <!-- more -->
 
